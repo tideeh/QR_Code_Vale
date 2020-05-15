@@ -134,7 +134,7 @@ class ExibeArvore : AppCompatActivity() {
             } else {
                 setContentView(R.layout.activity_exibe_arvore1)
 
-                findViewById<ImageView>(R.id.empresa_logo).setImageDrawable(getDrawable(R.drawable.vale_escudo))
+                //findViewById<ImageView>(R.id.empresa_logo).setImageDrawable(getDrawable(R.drawable.vale_escudo))
 
                 val uri =
                     "@drawable/" + codigo.toLowerCase() + "_1" // where myresource (without the extension) is the file
