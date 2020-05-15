@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "725825612013",
+    "firebase_url": "https://qr-code-vale.firebaseio.com",
+    "project_id": "qr-code-vale",
+    "storage_bucket": "qr-code-vale.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:725825612013:android:7d998dadfa43f3a1db84e4",
+        "android_client_info": {
+          "package_name": "br.com.polenflorestal.qrcodevale"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "725825612013-0ofll3uktd8r9m8u72ev6srhi0115ekg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.polenflorestal.qrcodevale",
+            "certificate_hash": "e3aaec973184a9ba7fd531f1d65392b75a989e0e"
+          }
+        },
+        {
+          "client_id": "725825612013-0fh192paf8g5i6tvrdad30cv6i213tfu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLndY92RhsNqGFMMTV9ZlaH3akJZpnAiI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "725825612013-0fh192paf8g5i6tvrdad30cv6i213tfu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
