@@ -14,25 +14,25 @@
     <uses-permission android:name="android.permission.FLASHLIGHT" />
 
     <application
-        android:hardwareAccelerated="false"
-        android:largeHeap="true"
-        android:name="br.com.polenflorestal.qrcodevale.MyApp"
+        android:name=".MyApp"
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher_my_10"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_my_10_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="br.com.polenflorestal.qrcodevale.Croqui">
-        </activity>
-        <activity android:name="br.com.polenflorestal.qrcodevale.ExibeArvore" />
+        <activity android:name=".MaisFotos"></activity>
+        <activity android:name=".Croqui"></activity>
+        <activity android:name=".ExibeArvore" />
         <activity
-            android:name="br.com.polenflorestal.qrcodevale.QRScanner"
+            android:name=".QRScanner"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-        <activity android:name="br.com.polenflorestal.qrcodevale.MainActivity" />
+        <activity android:name=".MainActivity" />
         <activity
-            android:name="br.com.polenflorestal.qrcodevale.SplashScreenActivity"
+            android:name=".SplashScreenActivity"
             android:screenOrientation="portrait"
             android:theme="@style/MyFullScreen"
             tools:ignore="LockedOrientationActivity">

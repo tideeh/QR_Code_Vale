@@ -2,7 +2,9 @@ package br.com.polenflorestal.qrcodevale
 
 import android.content.Intent
 import android.graphics.Color
+import android.net.Uri
 import android.os.Bundle
+import android.text.Html
 import android.text.InputType
 import android.util.Log
 import android.view.Gravity
@@ -142,7 +144,7 @@ class ExibeArvore : AppCompatActivity() {
                 findViewById<ImageView>(R.id.arvore_img_1).setImageResource(imageResource)
 
                 findViewById<TextView>(R.id.local).text = local
-                findViewById<TextView>(R.id.coordenadas).text = coordenadas
+                findViewById<TextView>(R.id.coordenadas).text = Html.fromHtml("<u>$coordenadas</u>")
                 //findViewById<TextView>(R.id.talhao).text = bloco.toString()
                 findViewById<TextView>(R.id.individuo).text = arvore_pos.toString()
                 findViewById<TextView>(R.id.especie).text = codigo_geno
@@ -262,5 +264,18 @@ class ExibeArvore : AppCompatActivity() {
         ) { dialog, which -> dialog.cancel() }
 
         builder.show()
+    }
+
+    fun clickCoordinates(view: View) {
+        val coordinates = findViewById<TextView>(R.id.coordenadas).text
+        val uri = "http://maps.google.com/maps?z=15&t=m&q=$coordinates"
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(uri))
+        startActivity(intent)
+    }
+
+    fun btnMaisFotos(view: View) {
+        val intent = Intent(this, MaisFotos::class.java)
+        intent.putExtra("codigo", codigo)
+        startActivity(intent)
     }
 }
